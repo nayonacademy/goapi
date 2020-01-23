@@ -1,10 +1,10 @@
 package responses
 
-import "net/http"
-
-import "encoding/json"
-
-import "fmt"
+import (
+	"encoding/json"
+	"fmt"
+	"net/http"
+)
 
 // JSON - json response
 func JSON(w http.ResponseWriter, statusCode int, data interface{}) {
